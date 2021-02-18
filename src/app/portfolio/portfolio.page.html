@@ -1,0 +1,23 @@
+<ion-header translucent="true">
+  <app-my-menu></app-my-menu>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-padding-top">
+      <ion-col>
+        <h1>Click on each project to view the web application</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let project of projects" size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3">
+        <ion-card (click)="itemTapped(project.url)">
+            <img src="../../assets/images/{{project.image}}.jpg">
+            <ion-card-header>
+              <ion-card-title>{{project.title}}</ion-card-title>
+              <ion-card-subtitle>{{project.url}}</ion-card-subtitle>
+            </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

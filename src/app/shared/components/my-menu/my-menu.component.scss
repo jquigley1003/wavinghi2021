@@ -1,0 +1,12 @@
+ion-toolbar {
+  position: fixed;
+  --background: none;
+}
+
+ion-menu-button {
+  color: var(--ion-color-medium);
+}
+
+ion-button {
+  --background-hover: var(--ion-color-secondary);
+}

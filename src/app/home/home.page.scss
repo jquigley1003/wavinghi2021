@@ -1,0 +1,23 @@
+ion-content {
+  --background: url('../../assets/images/beach-wave2.jpg') no-repeat center center fixed;
+  --background-size: cover;
+}
+
+.text-shadow-white {
+  text-shadow: 2px 2px #ebebeb;
+}
+
+.text-shadow-ltblue {
+  text-shadow: 2px 2px 1px #cae9e4;
+}
+
+.center-img {
+  display: block;
+  margin: 0px auto;
+}
+
+.company-name {
+  font-family: 'Musette Script', cursive;
+  font-size: 3em;
+  font-weight: bold;
+}
