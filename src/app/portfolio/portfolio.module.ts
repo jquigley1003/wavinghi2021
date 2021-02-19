@@ -8,6 +8,7 @@ import { PortfolioPageRoutingModule } from './portfolio-routing.module';
 
 import { PortfolioPage } from './portfolio.page';
 import { MyMenuModule } from '../shared/components/my-menu/my-menu.module';
+import { FooterModule } from '../shared/components/footer/footer.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { MyMenuModule } from '../shared/components/my-menu/my-menu.module';
     FormsModule,
     IonicModule,
     PortfolioPageRoutingModule,
-    MyMenuModule
+    MyMenuModule,
+    FooterModule
   ],
   declarations: [PortfolioPage]
 })
