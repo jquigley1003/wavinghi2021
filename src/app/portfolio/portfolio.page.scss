@@ -1,4 +1,16 @@
+ion-content {
+  --background: url('../../assets/images/beach-clean.jpg') no-repeat center center fixed;
+  --background-size: cover;
+}
+
 ion-card-header { 
   height: 10em;
   text-align: center;
+}
+
+.instructions {
+  color: var(--ion-color-light);
+  text-align: center;
+  filter: drop-shadow(2px 2px 10px black);
+  
 }
