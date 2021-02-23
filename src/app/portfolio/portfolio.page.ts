@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -12,7 +13,9 @@ export class PortfolioPage implements OnInit {
   portfolioUrls: string[];
   projects: Array<{url: string, title: string, note: string, image: string}>;
 
-  constructor(private navCtrl: NavController) { 
+  constructor(
+    private navCtrl: NavController,
+    private router: Router) { 
     this.cardImages = ['GravityFitness', 'HealingHeartCommunications', 'SherwoodForest', 'GoodnessBreath',
     'MRO', 'FryerLawFirm', 'WiiFM-Consulting'];
 
@@ -43,7 +46,8 @@ export class PortfolioPage implements OnInit {
   }
 
   goHome() {
-    this.navCtrl.navigateBack('/');
+    // this.navCtrl.navigateForward('/home');
+    this.router.navigate(['/home']);
   }
 
 }
