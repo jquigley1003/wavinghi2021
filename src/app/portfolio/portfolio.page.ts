@@ -16,16 +16,16 @@ export class PortfolioPage implements OnInit {
   constructor(
     private navCtrl: NavController,
     private router: Router) { 
-    this.cardImages = ['GravityFitness', 'HealingHeartCommunications', 'SherwoodForest', 'GoodnessBreath',
-    'MRO', 'FryerLawFirm', 'WiiFM-Consulting'];
+    this.cardImages = ['GravityFitness', 'HealingHeartCommunications', 'TheMYJ', 'SherwoodForest', 'GoodnessBreath',
+    'MRO', 'PeaceOfMyHeart', 'WiiFM-Consulting'];
 
-    this.titles = ['Gravity Fitness', 'Healing Heart Communications', 'Sherwood Forest Civic Association', 'Goodness Breath Project',
-      'MRO Management Services', 'Fryer Law (App In Progress)', 'WiiFM Consulting (Older Work)'];
+    this.titles = ['Gravity Fitness', 'Healing Heart Communications', 'The Marrying Yourself Journey', 'Sherwood Forest Civic Association', 'Goodness Breath Project',
+      'MRO Management Services', 'Peace of My Heart (App In Progress)', 'WiiFM Consulting (Older Work)'];
 
     this.portfolioUrls = [
-      'https://gravityfitnessatl.com/', 'https://healingheartcommunications.com/', 'https://sherwoodforestatl.org',
-      'https://goodnessbreath.com', 'https://mromanagementservices.com', 'https://fryerlaw2020.web.app/',
-      'http://wiifmconsulting.com/'];
+      'https://gravityfitnessatl.com', 'https://healingheartcommunications.com', 'https://themarryingyourselfjourney.com','https://sherwoodforestatl.org',
+      'https://goodnessbreath.com', 'https://mromanagementservices.com', 'https://peace-of-my-heart.web.app',
+      'http://wiifmconsulting.com'];
 
     this.projects = [];
     for (let i = 1; i < this.cardImages.length+1; i++) {
